@@ -1,0 +1,46 @@
+/*Primary Selectors*/
+body{
+	background-color: cyan;
+	color:#000;
+	font-family:"Times New Roman",Tim es, serif;
+	font-size: large;
+}
+
+table{
+	width: 500px;
+	border-collapse: collapse;
+	table-layout:fixed;
+}
+
+td{
+	vertical-align:top;
+	padding: 5px;
+	word-wrap: break-word;
+}
+
+/*IDs an d classes*/
+
+#fullpage {
+	margin: right;
+}
+
+.label_col{
+	text-align:right;
+}
+
+.input_col{
+	text-align:left;
+}
+
+.feedback_col{
+	text-align:center;
+	vertical-align:middle;
+	color:LightGray;
+	font-size:small;
+}
+
+.Button{
+	margin:auto;
+	text-align:center;
+	width:50px;
+}

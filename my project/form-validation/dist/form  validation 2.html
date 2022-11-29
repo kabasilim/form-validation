@@ -1,0 +1,58 @@
+<html lang="en" meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+     <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="formvalidation.css">
+     <title>Form Validation</title>
+	 <script type="text/javascript" src="formvalidation.js"></script>
+</head>
+
+<body>
+
+  <form action="#">
+      <div id="fullpage">
+	  
+	   <h1>Make an order:</h1>  <!--  order table format -->
+	   
+	   <table border="0">
+        <tr>
+		   <td class="label_cool">First Name:</td>
+		   <td class="input_col"><input name="firstName" id="firstName" type="text" onblur="validatefirstName();"></td>
+		   <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+		</tr>
+		<tr>
+		   <td class="label_cool">Last Name:</td>
+		   <td class="input_col"><input name="LastName" id="LastName" type="text" onblur="validateLastName();"></td>
+		   <td class="feedback_col"><span id="LastNamePrompt">&nbsp;</span></td>
+		</tr>
+		<tr>
+		   <td class="label_cool">Phone Number:</td>
+		   <td class="input_col"><input name="phone" id="phone" type="text" onblur="validatePhone();" placeholder="xxxx-xxx-xxxxx"></td>
+		   <td class="feedback_col"><span id="phonePrompt"></span></td>
+		</tr>
+		<tr>
+		   <td class="label_cool">Order Quantity:</td>
+		   <td class="input_col"><input name="quantity" id="quantity" type="number"></td>
+		   <td class="feedback_col"><span id="quantityPrompt">1&ndash;55</span></td>
+		</tr>
+		<tr>
+		   <td class="label_cool">Item Price:</td>
+		   <td class="input_col"><input name="price" id="price" type="text" value="200" readonly></td>
+		   <td class="feedback_col">NGN</td>
+		</tr>
+		
+		<tr>
+		   <td class="Button" id="Button" colspan="3"> <span class="buttonBG" onclick="calcOrder();"><button>Order Now</button></span></td>
+		</tr>
+	 </table>
+    <span  id="orderConfirm">&nbsp;</span>
+  </div>
+   <!----
+   <input type="submit" value="submit"/>  
+   ---->
+   
+</form>
+
+</body>
+
+</html>
